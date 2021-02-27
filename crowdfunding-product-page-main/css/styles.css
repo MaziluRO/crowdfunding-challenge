@@ -1,0 +1,182 @@
+:root {
+	--moderate-cyan: hsl(176, 50%, 47%);
+	--dark-cyan: hsl(176, 72%, 28%);
+	--black: hsl(0, 0%, 0%);
+	--dark-gray: hsl(0, 0%, 48%);
+	--gray-white: #f4f4f4;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Commissioner', sans-serif;
+	font-weight: 400;
+	color: var(--dark-gray);
+	line-height: 1.9;
+	background: var(--gray-white);
+}
+
+img {
+	width: 100%;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.btn {
+	display: inline-block;
+	padding: 10px 30px;
+	border-radius: 30px;
+	background-color: var(--moderate-cyan);
+	font-size: 13px;
+	font-weight: 500;
+}
+
+.btn-green:hover {
+	background-color: var(--dark-cyan);
+}
+
+/*////Header Section////*/
+header {
+	background-image: url('../images/image-hero-desktop.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 28vw;
+	position: relative;
+}
+
+header::before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: var(--black);
+	opacity: 0.2;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5rem 0;
+	max-width: 1440px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 2;
+}
+
+nav .nav-links {
+	display: flex;
+	align-items: center;
+}
+
+nav .nav-links li {
+	margin-left: 3rem;
+	font-size: 16px;
+}
+
+/*/ //Main Section ///*/
+.main-container {
+	width: 40%;
+	margin: 0 auto;
+	transform: translateY(-15%);
+	position: relative;
+}
+
+/*
+.main-container::before {
+	content: '';
+	width: 40px;
+	height: 40px;
+	background-image: url('../images/logo-mastercraft.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+*/
+
+.main-container .logo-mastercraft {
+	position: absolute;
+	width: 40px;
+	left: 50%;
+	top: 0;
+	transform: translate(-50%, -45%);
+}
+
+.main-container .container {
+	width: 100%;
+	padding: 4rem;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 0 3px #ccc;
+	display: flex;
+	flex-direction: column;
+}
+
+.main-container .top-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.main-container .top-container h1 {
+	color: var(--black);
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.main-container .top-container p {
+	font-size: 17px;
+}
+
+.main-container .top-container .bottom-options {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 4rem;
+}
+
+.btn-grey {
+	background-color: var(--gray-white);
+	color: var(--dark-gray);
+	box-shadow: 0 0 3px #ccc;
+	position: relative;
+	padding-left: 6rem;
+}
+
+.btn-bookmark::before {
+	content: '';
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url('../images/icon-bookmark.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
