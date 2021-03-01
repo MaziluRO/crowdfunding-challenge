@@ -134,6 +134,7 @@ nav .nav-links li {
 	box-shadow: 0 0 3px #ccc;
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 3.5rem;
 }
 
 .main-container .top-container {
@@ -145,12 +146,12 @@ nav .nav-links li {
 
 .main-container .top-container h1 {
 	color: var(--black);
-	font-size: 30px;
+	font-size: 2.5rem;
 	font-weight: 700;
 }
 
 .main-container .top-container p {
-	font-size: 17px;
+	font-size: 1.5rem;
 }
 
 .main-container .top-container .bottom-options {
@@ -179,4 +180,58 @@ nav .nav-links li {
 	background-image: url('../images/icon-bookmark.svg');
 	background-repeat: no-repeat;
 	background-size: contain;
+}
+
+.main-container .middle-container .numbers-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.main-container .middle-container .numbers-container .number {
+	text-align: left;
+	flex: 1 1 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.main-container .middle-container .numbers-container .number:not(:first-child) {
+	border-left: 1px solid var(--dark-gray);
+	padding-left: 30px;
+}
+
+.main-container .middle-container .numbers-container .number h2 {
+	font-size: 3rem;
+	color: var(--black);
+	font-weight: 700;
+}
+
+.main-container .middle-container .numbers-container .number p {
+	font-size: 1.2rem;
+}
+
+.main-container .middle-container .progress-bar {
+	height: 10px;
+	width: 100%;
+	background-color: var(--gray-white);
+	margin-top: 3rem;
+	border-radius: 10px;
+	position: relative;
+}
+
+.main-container .middle-container .progress-bar::before {
+	content: '';
+	height: 100%;
+	width: 80%;
+	border-radius: inherit;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: var(--moderate-cyan);
+}
+
+.bottom-container .stand-options {
+	border-radius: 10px;
+	border: 1px solid var(--dark-gray);
 }
